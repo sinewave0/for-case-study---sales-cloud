@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrightPath Academy — Learn Java, Python & C</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="wordmark">BrightPath <span>Academy</span></div>
+    <nav class="locations">Java · Python · C — cohort-based, instructor-led</nav>
+  </header>
+
+  <section class="hero">
+    <h1>Write code that gets you hired.</h1>
+    <p>Small live cohorts, real projects, and instructors who still ship code for a living. Tell us which language you're aiming for and we'll get back to you with the next available batch.</p>
+  </section>
+
+  <section class="courses">
+    <div class="course-card java">
+      <p class="course-name">Java</p>
+      <pre>public class Hello {
+  public static void main(String[] a) {
+    System.out.println("Hello, BrightPath");
+  }
+}</pre>
+      <p class="course-desc">Core language, OOP, and Spring fundamentals for backend roles.</p>
+    </div>
+
+    <div class="course-card python">
+      <p class="course-name">Python</p>
+      <pre>print("Hello, BrightPath")</pre>
+      <p class="course-desc">Scripting, data handling, and automation from first principles.</p>
+    </div>
+
+    <div class="course-card c">
+      <p class="course-name">C</p>
+      <pre>#include &lt;stdio.h&gt;
+int main() {
+  printf("Hello, BrightPath\n");
+  return 0;
+}</pre>
+      <p class="course-desc">Memory, pointers, and the fundamentals every systems course assumes.</p>
+    </div>
+  </section>
+
+  <!--
+    ============================================================
+    SALESFORCE WEB-TO-LEAD FORM
+    Replace the oid value below with your own org's oid if you
+    reuse this template for a different Salesforce org.
+    ============================================================
+  -->
+  <section class="ledger">
+    <h2>Tell us what you want to learn</h2>
+    <p>This goes straight to our team as a new enrollment inquiry — no account needed to ask a question.</p>
+
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Dfj00000X17qr" method="POST">
+      <input type="hidden" name="oid" value="00Dfj00000X17qr">
+      <input type="hidden" name="retURL" value="https://www.google.com">
+      <input type="hidden" name="lead_source" value="Web">
+
+      <!-- Uncomment these two lines while testing, to get an email
+           back from Salesforce showing exactly why a submission
+           succeeded or failed:
+      <input type="hidden" name="debug" value="1">
+      <input type="hidden" name="debugEmail" value="you@example.com">
+      -->
+
+      <div class="field-row">
+        <div class="field">
+          <label for="first_name">First name</label>
+          <input type="text" id="first_name" name="first_name" maxlength="40">
+        </div>
+        <div class="field">
+          <label for="last_name">Last name</label>
+          <input type="text" id="last_name" name="last_name" maxlength="80" required>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" maxlength="80" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" maxlength="40">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="company">Company</label>
+        <input type="text" id="company" name="company" maxlength="40" placeholder="e.g. Acme Corp — or “Self-employed” if you're learning on your own" required>
+      </div>
+
+      <div class="field">
+        <label for="description">What are you hoping to learn?</label>
+        <textarea id="description" name="description" maxlength="500" placeholder="e.g. Python for a career switch into data, or Java for a college project"></textarea>
+      </div>
+
+      <button type="submit">Request a callback</button>
+    </form>
+  </section>
+
+  <footer>BrightPath Academy — this page submits directly to Salesforce Web-to-Lead.</footer>
+
+</div>
+</body>
+</html>
